@@ -77,7 +77,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     #'https://yourfrontenddomain.com',
-    'http://localhost:5174',  # for development
+    'http://localhost:5173',  # for development
 ]
 
 # Database
@@ -126,8 +126,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
 STATICFILES_DIRS  = [
-    os.path.join(BASE_DIR, 'AI-Tech/src/assets')
+    os.path.join(BASE_DIR, 'AI-Tech', 'src')
 ]
 # Static files for production (collect static files)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -143,9 +144,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # EMAIL_HOST_PASSWORD = 'xhmotqeblsskjbie'
 
 # CONTACT_EMAIL = 'info.billionairefrequencycode@gmail.com'
-# # DEFAULT_FROM_EMAIL =  EMAIL_HOST_USER
+# # # DEFAULT_FROM_EMAIL =  EMAIL_HOST_USER
 
-# # #authenticate to the SMTP server
+# # # #authenticate to the SMTP server
 
 # EMAIL_USE_TLS = True
-# # # EMAIL_USE_SSL = True
+# # # # EMAIL_USE_SSL = True
