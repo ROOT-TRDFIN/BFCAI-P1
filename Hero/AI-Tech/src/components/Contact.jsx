@@ -26,7 +26,7 @@ const Contact = () => {
 
     try {
       const response = await submitContactForm(formData);
-      setStatus("We’ve received your message and will be in touch soon!"); // Set success message
+      setStatus(" 💌 We’ve received your message and will be in touch soon!"); // Set success message
       setIsSent(true); // Change button text
       // Clear form data after success
       setFormData({
@@ -37,7 +37,7 @@ const Contact = () => {
         message: '', // Reset the correct field name
       });
     } catch (error) {
-      setStatus("There was an error sending your message.");
+      setStatus(" 💔 There was an error sending your message.");
     }
   };
 
@@ -130,7 +130,7 @@ const Contact = () => {
           </div>
         </form>
 
-        {status && <div className="alert alert-info mt-3">{status}</div>} {/* Show status message */}
+        {status && <div className=" contactapi alert alert-info mt-3">{status}</div>} {/* Show status message */}
       </div>
     </div>
   );
